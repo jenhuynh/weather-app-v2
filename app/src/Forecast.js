@@ -44,11 +44,17 @@ const Forecast = () => {
 const ForecastDay = ({ forecast }) => {
   return (
     <>
-      <h3>Day</h3>
-      <p>{forecast.day}</p>
-      <p>Time of data forecasted:{forecast?.dt}</p>
-      <p>Description: {forecast?.weather?.[0]?.description}</p>
-      <p>Temperature: {forecast?.main?.temp}</p>
+      <div className="weatherCard">
+        <h3>Sunnyvale Forecast</h3>
+        <img
+          src="https://icons-for-free.com/iconfiles/png/512/forecast+partly+cloudy+weather+icon-1320196484400215944.png"
+          alt="icon of sun and clouds"
+        ></img>
+        <p>{forecast.day}</p>
+        <p>Time of data forecasted:{forecast?.dt}</p>
+        <p>Description: {forecast?.weather?.[0]?.description}</p>
+        <p>Temperature: {forecast?.main?.temp}</p>
+      </div>
     </>
   );
 };

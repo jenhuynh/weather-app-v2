@@ -2,7 +2,7 @@ import dotenv from "dotenv";
 import pgp from "pg-promise";
 
 const db = initDb();
-
+// export const getWeather = () =>
 export const getTasks = () => db.any("SELECT * FROM tasks");
 
 export const addTask = (name) =>

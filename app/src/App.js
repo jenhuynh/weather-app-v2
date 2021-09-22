@@ -4,6 +4,7 @@ import { Routes, Route, Link } from "react-router-dom";
 
 import Forecast from "./Forecast";
 import WeatherForm from "./WeatherForm";
+import app from "./app.css";
 const App = () => (
   <main>
     <nav>

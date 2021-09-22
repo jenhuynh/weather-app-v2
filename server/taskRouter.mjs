@@ -5,7 +5,7 @@ import * as db from "./db.mjs";
 const taskRouter = express.Router();
 
 taskRouter.get("/", async (request, response) => {
-  const tasks = await db.getTasks();
+  const tasks = fetch("");
   response.json(tasks);
 });
 
